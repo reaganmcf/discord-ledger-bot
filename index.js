@@ -8,8 +8,12 @@ client.on('ready', () => {
 client.on('message', (message) => {
 	if (message.content == '!help') {
 		let m =
-			'fsb-ledger. Developed by BuffMan \n\n Examples commands: \n `!boughtshare aapl 200 197.32` \n `!boughtoption tsla 6/24 10p` \n `!bo spy 1/17/2021 320c`\n' +
-			'Contact BuffMan for more info and feature requests :)';
+			'fsb-ledger. Developed by BuffMan \n\n Examples commands: \n' +
+			'`!boughtshare aapl 200 197.32` -> Logs 200 shares of AAPL bought at 197.32 \n' +
+			'`!boughtoption tsla 6/24 10p` -> Logs TSLA put option with 10 strike expiring 6/24 \n' +
+			'`!bo spy adbe 9/20 300c` -> Logs ADBE call option with 300 strike expiring on 9/20 \n' +
+			'`!bs tsla 5 208.3` -> Logs 5 shares of TSLA bought at 208.3';
+		('Contact BuffMan for more info and feature requests :)');
 		message.channel.send(m);
 	} else if (message.content.startsWith('!boughtoption') || message.content.startsWith('!bo ')) {
 		console.log('OPTIONS');
