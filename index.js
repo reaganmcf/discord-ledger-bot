@@ -9,7 +9,7 @@ client.on('message', (message) => {
 	if (message.content == '!help') {
 		let m =
 			'fsb-ledger. Developed by BuffMan \n\n Examples commands: \n `!boughtshare aapl 200 197.32` \n `!boughtoption tsla 6/24 10p` \n `!bo spy 1/17/2021 320c`\n' +
-			'Visit https://github.com/reaganmcf/discord-ledger-bot for more info and feature requests :)';
+			'Contact BuffMan for more info and feature requests :)';
 		message.channel.send(m);
 	} else if (message.content.startsWith('!boughtoption') || message.content.startsWith('!bo ')) {
 		console.log('OPTIONS');
