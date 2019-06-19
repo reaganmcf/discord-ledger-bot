@@ -4,7 +4,7 @@ I made this for a private stock trading group I run. Allows members to log their
 **If you have any feature you would like implemented, please submit a new issue with the _Feature Request_ label and I will respond :\)**
 
 ## Example
-![](img)
+![https://i.imgur.com/Elyz69R.png](https://i.imgur.com/Elyz69R.png)
 
 #### Example Commands
 - `!help` -> Shows help message
